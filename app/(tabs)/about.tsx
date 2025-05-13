@@ -6,7 +6,7 @@ export default function Sobre() {
     <View style={styles.container}>
       <View style={styles.box}>
       <Text style={styles.text}>      
-      O bagulho é pesado mesmo. Berserk é uma obra escrita e ilustrada por Kentaro Miura, e tem o Guts como protagonista.
+      O bagulho é pesado mesmo. Berserk é uma obra escrita e ilustrada pelo Kentaro Miura, e tem o Guts como protagonista.
       O cara é um verdadeiro monstro, literalmente! Ele é um guerreiro com uma espada gigantesca, um cara que não conhece
       paz desde que nasceu. O Guts vive em um mundo sombrio, repleto de demônios, monstros e gente escrota. Sua vida é 
       um inferno, e ele carrega uma raiva e uma vingança dentro de si que não tem fim.

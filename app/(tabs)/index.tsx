@@ -66,7 +66,7 @@ export default function Index() {
             <IconButtons icon="save-alt" label="Save" onPress={onSaveImageAsync} />
           </View>
         </View>
-      ) : (
+      ) : ( 
           <View style={styles.footerContainer}>
             <Button theme='primary' label="Escolha a foto" onPress={pickImageAsync} />
             <Button label="Use a foto" onPress={() => setShowAppOptions(true)} />

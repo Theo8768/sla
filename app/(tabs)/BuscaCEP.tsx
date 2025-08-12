@@ -1,5 +1,5 @@
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-import { useBuscaCep } from '../hooks/usaBuscaCep';
+import { useBuscaCep } from '../hooks/useBuscaCep';
 
 export default function BuscaCEP() {
     const { cep, setCep, endereco, buscarCEP } = useBuscaCep();
@@ -17,11 +17,13 @@ export default function BuscaCEP() {
                 keyboardType="numeric"
             />
 
+        
             <View style={styles.buttonContainer}>
                 <Button title="Buscar" onPress={buscarCEP} color="#9400D3" />
             </View>
 
             {endereco.logradouro && (
+                
                 <View style={styles.result}>
                     <Text style={styles.label}>📍 Rua: <Text style={styles.value}>{endereco.logradouro}</Text></Text>
                     <Text style={styles.label}>🏘️ Bairro: <Text style={styles.value}>{endereco.bairro}</Text></Text>
@@ -32,7 +34,6 @@ export default function BuscaCEP() {
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,

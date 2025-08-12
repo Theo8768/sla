@@ -30,7 +30,7 @@ export default function EmojiList({ onSelect, onClickModal }: Props) {
                         onClickModal();  
                     }}
                 >
-                    <Image source={item} style={styles.image} />  // Removed key prop (not needed here)
+                    <Image source={item} style={styles.image} />  
                 </Pressable>
             )}
         />

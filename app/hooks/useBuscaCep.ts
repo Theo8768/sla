@@ -10,10 +10,10 @@ interface Endereco {
 export function useBuscaCep() {
     const [cep, setCep] = useState<string>('');
     const [endereco, setEndereco] = useState<Endereco>({
-        logradouro: "",
-        bairro: "",
-        localidade: "",
-        uf: ""
+        logradouro: '',
+        bairro: '',
+        localidade: '',
+        uf: '',
     });
 
     async function buscarCEP() {
@@ -22,7 +22,7 @@ export function useBuscaCep() {
             const dados: Endereco = await response.json();
             setEndereco(dados);
         } catch (error) {
-            console.error("Erro ao buscar CEP:", error);
+            console.error('Erro ao buscar CEP:', error);
         }
     }
 
@@ -31,5 +31,5 @@ export function useBuscaCep() {
         setCep,
         endereco,
         buscarCEP,
-    }
+    };
 }

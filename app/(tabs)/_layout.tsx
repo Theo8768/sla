@@ -1,20 +1,21 @@
 import { Tabs } from 'expo-router';
-
+import { StatusBar } from 'expo-status-bar';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 export default function TabLayout() {
   return (
+
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: '#9400D3',
-        headerStyle:{
+        headerStyle: {
           backgroundColor: '#000000',
         },
         headerShadowVisible: false,
-        headerTintColor:'#fff',
-        tabBarStyle:{
-          backgroundColor:'#000000',
+        headerTintColor: '#fff',
+        tabBarStyle: {
+          backgroundColor: '#000000',
 
         },
 
@@ -34,7 +35,7 @@ export default function TabLayout() {
         options={{
           title: 'Sobre',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'help-circle-sharp' : 'help-circle-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'help-circle-sharp' : 'help-circle-outline'} color={color} size={24} />
           ),
         }}
       />
@@ -43,12 +44,12 @@ export default function TabLayout() {
         options={{
           title: 'Lista',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'archive-sharp' : 'archive-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'archive-sharp' : 'archive-outline'} color={color} size={24} />
           ),
         }}
       />
     </Tabs>
   )
 
- 
+
 }
